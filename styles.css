@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.calculator {
+  display: grid;
+  position: relative;
+  transform: translate(-50%, -50%);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "total total total total"
+    "percent clear delete percent2"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three add"
+    "zero-zero zero dot  equals";
+}
+
+.total {
+  grid-area: total;
+}
+.percent {
+  grid-area: percent;
+}
+.seven {
+  grid-area: seven;
+}
+.four {
+  grid-area: four;
+}
+.one {
+  grid-area: one;
+}
+.zero-zero {
+  grid-area: zero-zero;
+}
+
+.clear {
+  grid-area: clear;
+}
+.eight {
+  grid-area: eight;
+}
+.five {
+  grid-area: five;
+}
+.two {
+  grid-area: two;
+}
+.zero {
+  grid-area: zero;
+}
+
+.delete {
+  grid-area: delete;
+}
+.nine {
+  grid-area: nine;
+}
+.six {
+  grid-area: six;
+}
+.three {
+  grid-area: three;
+}
+.dot {
+  grid-area: dot;
+}
+
+.percent2 {
+  grid-area: percent2;
+}
+.multiply {
+  grid-area: multiply;
+}
+.minus {
+  grid-area: minus;
+}
+.add {
+  grid-area: add;
+}
+.equals {
+  grid-area: equals;
+}
+
+.calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #333533;
+}
