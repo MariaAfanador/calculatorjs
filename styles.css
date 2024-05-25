@@ -18,7 +18,7 @@ body {
   gap: 10px;
   grid-template-areas:
     "total total total total"
-    "percent clear delete percent2"
+    "percent clear delete divide"
     "seven eight nine multiply"
     "four five six minus"
     "one two three add"
@@ -76,8 +76,8 @@ body {
   grid-area: dot;
 }
 
-.percent2 {
-  grid-area: percent2;
+.divide {
+  grid-area: divide;
 }
 .multiply {
   grid-area: multiply;
