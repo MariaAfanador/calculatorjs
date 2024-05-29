@@ -5,14 +5,14 @@
 }
 
 body {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
 }
 
 .calculator {
   display: grid;
-  position: relative;
+  position: absolute;
+   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
